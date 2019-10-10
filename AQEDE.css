@@ -1,0 +1,89 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #e94b6f;
+      color: white;
+  }
+}
+
+img {
+    max-width:40%;
+    height:auto;
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    color: white;
+    background: #e94b6f;
+    border-radius: 10px;
+    width: 100%;
+}
+
+h3{
+    size: 24px;
+}
+
+body {
+    background: white;
+    color: #e94b6f;
+}
+
+footer{
+    padding: 40px;
+  text-align: center;
+  background: #e94b6f;
+    border-radius: 10px;
+  color: white;
+  font-size: 14px;
+    font-family: SchulbuchNordNormal;
+}
+
+header {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 40px;
+  text-align: center;
+  background: #e94b6f;
+  color: white;
+  font-size: 14px;
+    font-family: SchulbuchNordNormal;
+    width: 100%;
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+    background: white;
+    color: #e94b6f;
+  resize: none;
+    vertical-align: top;
+    text-align: left;
+    border-color: #e94b6f;
+}
+
+table {
+    border-collapse: collapse;
+    background: white;
+}
+
+.input-wrap {
+    color: #e94b6f;
+    background: white;
+}
+
+.comment{
+    color: #e94b6f;
+    background: white;
+}
+
+th {
+    font-variant: small-caps;
+    text-align: center;
+    color: #e94b6f;
+}
+
+.button5 {
+    font-size: 24px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}

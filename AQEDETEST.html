@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="AQEDE.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        function getVote(int) {
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp=new XMLHttpRequest();
+            } else {  // code for IE6, IE5
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function() {
+                if (this.readyState==4 && this.status==200) {
+                    document.getElementById("poll").innerHTML=this.responseText;
+                }
+            }
+            xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+            xmlhttp.send();
+
+        }
+    </script>
+</head>
+<body>
+
+<center>
+    <header>
+        <h3>Sondage 2019</h3>
+        <img src ="Logo-AQEDE-1.jpg" alt="Logo AQEDE">
+    </header>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLScGz1xyRPR218iB3n-jgCjQnM-VeANh7i39J2jji3iodHikkA/formResponse" target="_self" method="POST">
+        <div class="container-fluid">
+        <table class="table-responsive" border="1">
+            <thead>
+            <tr>
+                <th></th>
+                <th scope="col">A: L'atelier a répondu à mes attentes</th>
+                <th scope="col">B: Le contenu présenté était pertinent pour ma pratique professionnelle</th>
+                <th scope="col">C: L'animation favorisait l'engagement</th>
+                <th scope="col">D: La place laissée aux interventions des participants était adéquate</th>
+                <th scope="col">E: L'espace et le matériel disponibles étaient adéquats</th>
+                <th scope="col">F: Je recommanderais cet atelier</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">100% Jumeaux: Rythmes et danse</th>
+                <td>
+                    <div>
+                                <div class="input-wrap"><input type="radio" name="entry.76565494" id="f1" value="1"/>
+                                    <label for="f1">1- Pas du tout</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.76565494" id="f2" value="2"/>
+                                    <label for="f2">2- Un peu </label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.76565494" id="f3" value="3"/>
+                                    <label for="f3">3- Assez</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.76565494" id="f4" value="4"/>
+                                    <label for="f4">4- Beaucoup</label></div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                                <div class="input-wrap"><input type="radio" name="entry.1083827955" id="a1" value="1"/>
+                                    <label for="a1">1- Pas du tout</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.1083827955" id="a2" value="2"/>
+                                    <label for="a2">2- Un peu</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.1083827955" id="a3" value="3"/>
+                                    <label for="a3">3- Assez</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.1083827955" id="a4" value="4"/>
+                                    <label for="a4">4- Beaucoup</label></div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                                <div class="input-wrap"><input type="radio" name="entry.29496714" id="b1" value="1"/>
+                                    <label for="b1">1- Pas du tout</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.29496714" id="b2" value="2"/>
+                                    <label for="b2">2- Un peu</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.29496714" id="b3" value="3"/>
+                                    <label for="b3">3- Assez</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.29496714" id="b4" value="4"/>
+                                    <label for="b4">4- Beaucoup</label></div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                                <div class="input-wrap"><input type="radio" name="entry.1374833008" id="c1" value="1"/>
+                                    <label for="c1">1- Pas du tout</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.1374833008" id="c2" value="2"/>
+                                    <label for="c2">2- Un peu</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.1374833008" id="c3" value="3"/>
+                                    <label for="c3">3- Assez</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.1374833008" id="c4" value="4"/>
+                                    <label for="c4">4- Beaucoup</label></div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                                <div class="input-wrap"><input type="radio" name="entry.320511492" id="d1" value="1"/>
+                                    <label for="d1">1- Pas du tout</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.320511492" id="d2" value="2"/>
+                                    <label for="d2">2- Un peu</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.320511492" id="d3" value="3"/>
+                                    <label for="d3">3- Assez</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.320511492" id="d4" value="4"/>
+                                    <label for="d4">4- Beaucoup</label></div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                                <div class="input-wrap"><input type="radio" name="entry.417302479" id="e1" value="1"/>
+                                    <label for="e1">1- Pas du tout</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.417302479" id="e2" value="2"/>
+                                    <label for="e2">2- Un peu</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.417302479" id="e3" value="3"/>
+                                    <label for="e3">3- Assez</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.417302479" id="e4" value="4"/>
+                                    <label for="e4">4- Beaucoup</label></div>
+                    </div>
+                </td>
+            </tr>
+            <! Done first row -->
+            <tr>
+                <th scope="row">Claude Bellemare: Technique contemporaine</th>
+                <td>
+                    <div>
+                                <div class="input-wrap"><input type="radio" name="entry.1133579288" id="a1.1" value="1"/>
+                                    <label for="a1.1">1- Pas du tout</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.1133579288" id="a2.1" value="2"/>
+                                    <label for="a2.1">2- Un peu</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.1133579288" id="a3.1" value="3"/>
+                                    <label for="a3.1">3- Assez</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.1133579288" id="a4.1" value="4"/>
+                                    <label for="a4.1">4- Beaucoup</label></div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                                <div class="input-wrap"><input type="radio" name="entry.1218821029" id="b1.1" value="1"/>
+                                    <label for="b1.1">1- Pas du tout</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.1218821029" id="b2.1" value="2"/>
+                                    <label for="b2.1">2- Un peu</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.1218821029" id="b3.1" value="3"/>
+                                    <label for="b3.1">3- Assez</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.1218821029" id="b4.1" value="4"/>
+                                    <label for="b4.1">4- Beaucoup</label></div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                                <div class="input-wrap"><input type="radio" name="entry.147896086" id="c1.1" value="1"/>
+                                    <label for="c1.1">1- Pas du tout</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.147896086" id="c2.1" value="2"/>
+                                    <label for="c2.1">2- Un peu</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.147896086" id="c3.1" value="3"/>
+                                    <label for="c3.1">3- Assez</label></div>
+                                <div class="input-wrap"><input type="radio" name="entry.147896086" id="c4.1" value="4"/>
+                                    <label for="c4.1">4- Beaucoup</label></div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown9" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.87512124" id="d1.1" value="1"/>
+                                    <label for="d1.1">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.87512124" id="d2.1" value="2"/>
+                                    <label for="d2.1">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.87512124" id="d3.1" value="3"/>
+                                    <label for="d3.1">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.87512124" id="d4.1" value="4"/>
+                                    <label for="d4.1">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown10" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1817538420" id="e1.1" value="1"/>
+                                    <label for="e1.1">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1817538420" id="e2.1" value="2"/>
+                                    <label for="e2.1">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1817538420" id="e3.1" value="3"/>
+                                    <label for="e3.1">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1817538420" id="e4.1" value="4"/>
+                                    <label for="e4.1">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown11" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.814182659" id="f1.1" value="1"/>
+                                    <label for="f1.1">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.814182659" id="f2.1" value="2"/>
+                                    <label for="f2.1">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.814182659" id="f3.1" value="3"/>
+                                    <label for="f3.1">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.814182659" id="f4.1" value="4"/>
+                                    <label for="f4.1">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <! Done 2nd row -->
+            <tr>
+                <th scope="row">Fannie Côté: La classe technique</th>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown12" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2066484468" id="a1.2" value="1"/>
+                                    <label for="a1.2">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2066484468" id="a2.2" value="2"/>
+                                    <label for="a2.2">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2066484468" id="a3.2" value="3"/>
+                                    <label for="a3.2">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2066484468" id="a4.2" value="4"/>
+                                    <label for="a4.2">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown13" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1682279056" id="b1.2" value="1"/>
+                                    <label for="b1.2">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1682279056" id="b2.2" value="2"/>
+                                    <label for="b2.2">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1682279056" id="b3.2" value="3"/>
+                                    <label for="b3.2">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1682279056" id="b4.2" value="4"/>
+                                    <label for="b4.2">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown14" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.462899468" id="c1.2" value="1"/>
+                                    <label for="c1.2">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.462899468" id="c2.2" value="2"/>
+                                    <label for="c2.2">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.462899468" id="c3.2" value="3"/>
+                                    <label for="c3.2">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.462899468" id="c4.2" value="4"/>
+                                    <label for="c4.2">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown15" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.375278893" id="d1.2" value="1"/>
+                                    <label for="d1.2">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.375278893" id="d2.2" value="2"/>
+                                    <label for="d2.2">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.375278893" id="d3.2" value="3"/>
+                                    <label for="d3.2">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.375278893" id="d4.2" value="4"/>
+                                    <label for="d4.2">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown59" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2026897721" id="e1.2" value="1"/>
+                                    <label for="e1.2">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2026897721" id="e2.2" value="2"/>
+                                    <label for="e2.2">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2026897721" id="e3.2" value="3"/>
+                                    <label for="e3.2">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2026897721" id="e4.2" value="4"/>
+                                    <label for="e4.2">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown16" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1740818240" id="f1.2" value="1"/>
+                                    <label for="f1.2">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1740818240" id="f2.2" value="2"/>
+                                    <label for="f2.2">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1740818240" id="f3.2" value="3"/>
+                                    <label for="f3.2">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1740818240" id="f4.2" value="4"/>
+                                    <label for="f4.2">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <! Done 3rd row -->
+            <tr>
+                <th scope="row">Céline Cassone: Safe floor</th>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown17" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.697755593" id="a1.3" value="1"/>
+                                    <label for="a1.3">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.697755593" id="a2.3" value="2"/>
+                                    <label for="a2.3">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.697755593" id="a3.3" value="3"/>
+                                    <label for="a3.3">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.697755593" id="a4.3" value="4"/>
+                                    <label for="a4.3">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown18" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.549352099" id="b1.3" value="1"/>
+                                    <label for="b1.3">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.549352099" id="b2.3" value="2"/>
+                                    <label for="b2.3">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.549352099" id="b3.3" value="3"/>
+                                    <label for="b3.3">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.549352099" id="b4.3" value="4"/>
+                                    <label for="b4.3">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown19" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1873455074" id="c1.3" value="1"/>
+                                    <label for="c1.3">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1873455074" id="c2.3" value="2"/>
+                                    <label for="c2.3">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1873455074" id="c3.3" value="3"/>
+                                    <label for="c3.3">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1873455074" id="c4.3" value="4"/>
+                                    <label for="c4.3">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown20" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.389653594" id="d1.3" value="1"/>
+                                    <label for="d1.3">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.389653594" id="d2.3" value="2"/>
+                                    <label for="d2.1">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.389653594" id="d3.3" value="3"/>
+                                    <label for="d3.3">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.389653594" id="d4.3" value="4"/>
+                                    <label for="d4.3">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown21" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.293736653" id="e1.3" value="1"/>
+                                    <label for="e1.3">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.293736653" id="e2.3" value="2"/>
+                                    <label for="e2.3">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.293736653" id="e3.3" value="3"/>
+                                    <label for="e3.3">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.293736653" id="e4.3" value="4"/>
+                                    <label for="e4.3">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown22" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1719220714" id="f1.3" value="1"/>
+                                    <label for="f1.3">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1719220714" id="f2.3" value="2"/>
+                                    <label for="f2.3">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1719220714" id="f3.3" value="3"/>
+                                    <label for="f3.3">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1719220714" id="f4.3" value="4"/>
+                                    <label for="f4.3">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <! Done 4th row -->
+            <tr>
+                <th scope="row">CP de la CSMB: Plateforme Éduc'Arts</th>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown23" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.581692660" id="a1.4" value="1"/>
+                                    <label for="a1.4">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.581692660" id="a2.4" value="2"/>
+                                    <label for="a2.4">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.581692660" id="a3.4" value="3"/>
+                                    <label for="a3.4">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.581692660" id="a4.4" value="4"/>
+                                    <label for="a4.4">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown24" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1797514915" id="b1.4" value="1"/>
+                                    <label for="b1.4">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1797514915" id="b2.4" value="2"/>
+                                    <label for="b2.4">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1797514915" id="b3.4" value="3"/>
+                                    <label for="b3.4">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1797514915" id="b4.4" value="4"/>
+                                    <label for="b4.4">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown25" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.262963651" id="c1.4" value="1"/>
+                                    <label for="c1.4">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.262963651" id="c2.4" value="2"/>
+                                    <label for="c2.4">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.262963651" id="c3.4" value="3"/>
+                                    <label for="c3.4">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.262963651" id="c4.4" value="4"/>
+                                    <label for="c4.4">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown26" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1836086762" id="d1.4" value="1"/>
+                                    <label for="d1.4">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1836086762" id="d2.4" value="2"/>
+                                    <label for="d2.4">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1836086762" id="d3.4" value="3"/>
+                                    <label for="d3.4">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1836086762" id="d4.4" value="4"/>
+                                    <label for="d4.4">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown27" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1187690422" id="e1.4" value="1"/>
+                                    <label for="e1.4">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1187690422" id="e2.4" value="2"/>
+                                    <label for="e2.4">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1187690422" id="e3.4" value="3"/>
+                                    <label for="e3.4">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1187690422" id="e4.4" value="4"/>
+                                    <label for="e4.4">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown28" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.985436057" id="f1.4" value="1"/>
+                                    <label for="f1.4">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.985436057" id="f2.4" value="2"/>
+                                    <label for="f2.4">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.985436057" id="f3.4" value="3"/>
+                                    <label for="f3.4">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.985436057" id="f4.4" value="4"/>
+                                    <label for="f4.4">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <! Done 5th row -->
+            <tr>
+                <th scope="row">Channie Tondreault: Techno-pédago</th>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown29" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1769225599" id="a1.5" value="1"/>
+                                    <label for="a1.5">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1769225599" id="a2.5" value="2"/>
+                                    <label for="a2.5">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1769225599" id="a3.5" value="3"/>
+                                    <label for="a3.5">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1769225599" id="a4.5" value="4"/>
+                                    <label for="a4.5">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown30" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2090035567" id="b1.5" value="1"/>
+                                    <label for="b1.5">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2090035567" id="b2.5" value="2"/>
+                                    <label for="b2.5">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2090035567" id="b3.5" value="3"/>
+                                    <label for="b3.5">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2090035567" id="b4.5" value="4"/>
+                                    <label for="b4.5">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown31" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.417262472" id="c1.5" value="1"/>
+                                    <label for="c1.5">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.417262472" id="c2.5" value="2"/>
+                                    <label for="c2.5">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.417262472" id="c3.5" value="3"/>
+                                    <label for="c3.5">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.417262472" id="c4.5" value="4"/>
+                                    <label for="c4.5">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown32" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1349085574" id="d1.5" value="1"/>
+                                    <label for="d1.5">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1349085574" id="d2.5" value="2"/>
+                                    <label for="d2.5">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1349085574" id="d3.5" value="3"/>
+                                    <label for="d3.5">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1349085574" id="d4.5" value="4"/>
+                                    <label for="d4.5">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown33" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.869648505" id="e1.5" value="1"/>
+                                    <label for="e1.5">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.869648505" id="e2.5" value="2"/>
+                                    <label for="e2.5">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.869648505" id="e3.5" value="3"/>
+                                    <label for="e3.5">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.869648505" id="e4.5" value="4"/>
+                                    <label for="e4.5">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown34" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.316886201" id="f1.5" value="1"/>
+                                    <label for="f1.5">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.316886201" id="f2.5" value="2"/>
+                                    <label for="f2.5">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.316886201" id="f3.5" value="3"/>
+                                    <label for="f3.5">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.316886201" id="f4.5" value="4"/>
+                                    <label for="f4.5">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <! Done 6th row -->
+            <tr>
+                <th scope="row">Caroline et Marjolaine: Le processus créatif</th>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown35" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1466012211" id="a1.6" value="1"/>
+                                    <label for="a1.6">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1466012211" id="a2.6" value="2"/>
+                                    <label for="a2.6">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1466012211" id="a3.6" value="3"/>
+                                    <label for="a3.6">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1466012211" id="a4.6" value="4"/>
+                                    <label for="a4.6">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown36" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.156673075" id="b1.6" value="1"/>
+                                    <label for="b1.6">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.156673075" id="b2.6" value="2"/>
+                                    <label for="b2.6">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.156673075" id="b3.6" value="3"/>
+                                    <label for="b3.6">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.156673075" id="b4.6" value="4"/>
+                                    <label for="b4.6">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown37" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.254417049" id="c1.6" value="1"/>
+                                    <label for="c1.6">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.254417049" id="c2.6" value="2"/>
+                                    <label for="c2.6">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.254417049" id="c3.6" value="3"/>
+                                    <label for="c3.6">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.254417049" id="c4.6" value="4"/>
+                                    <label for="c4.6">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown38" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.948403048" id="d1.6" value="1"/>
+                                    <label for="d1.6">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.948403048" id="d2.6" value="2"/>
+                                    <label for="d2.6">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.948403048" id="d3.6" value="3"/>
+                                    <label for="d3.6">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.948403048" id="d4.6" value="4"/>
+                                    <label for="d4.6">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown39" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1474741538" id="e1.6" value="1"/>
+                                    <label for="e1.6">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1474741538" id="e2.6" value="2"/>
+                                    <label for="e2.6">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1474741538" id="e3.6" value="3"/>
+                                    <label for="e3.6">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1474741538" id="e4.6" value="4"/>
+                                    <label for="e4.6">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown40" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1340304289" id="f1.6" value="1"/>
+                                    <label for="f1.6">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1340304289" id="f2.6" value="2"/>
+                                    <label for="f2.6">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1340304289" id="f3.6" value="3"/>
+                                    <label for="f3.6">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1340304289" id="f4.6" value="4"/>
+                                    <label for="f4.6">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <! Done 7th row -->
+            <tr>
+                <th scope="row">Catherine Dagenais: Interprétation</th>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown41" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1755447289" id="a1.7" value="1"/>
+                                    <label for="a1.7">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1755447289" id="a2.7" value="2"/>
+                                    <label for="a2.7">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1755447289" id="a3.7" value="3"/>
+                                    <label for="a3.7">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1755447289" id="a4.7" value="4"/>
+                                    <label for="a4.7">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown42" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2034853872" id="b1.7" value="1"/>
+                                    <label for="b1.7">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2034853872" id="b2.7" value="2"/>
+                                    <label for="b2.7">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2034853872" id="b3.7" value="3"/>
+                                    <label for="b3.7">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2034853872" id="b4.7" value="4"/>
+                                    <label for="b4.7">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown43" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1070343275" id="c1.7" value="1"/>
+                                    <label for="c1.7">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1070343275" id="c2.7" value="2"/>
+                                    <label for="c2.7">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1070343275" id="c3.7" value="3"/>
+                                    <label for="c3.7">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1070343275" id="c4.7" value="4"/>
+                                    <label for="c4.7">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown44" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.127294827" id="d1.7" value="1"/>
+                                    <label for="d1.7">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.127294827" id="d2.7" value="2"/>
+                                    <label for="d2.7">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.127294827" id="d3.7" value="3"/>
+                                    <label for="d3.7">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.127294827" id="d4.7" value="4"/>
+                                    <label for="d4.7">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown45" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1837633525" id="e1.7" value="1"/>
+                                    <label for="e1.7">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1837633525" id="e2.7" value="2"/>
+                                    <label for="e2.7">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1837633525" id="e3.7" value="3"/>
+                                    <label for="e3.7">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1837633525" id="e4.7" value="4"/>
+                                    <label for="e4.7">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown46" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2146345471" id="f1.7" value="1"/>
+                                    <label for="f1.7">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2146345471" id="f2.7" value="2"/>
+                                    <label for="f2.7">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2146345471" id="f3.7" value="3"/>
+                                    <label for="f3.7">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2146345471" id="f4.7" value="4"/>
+                                    <label for="f4.7">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <! Done 8th row -->
+            <tr>
+                <th scope="row">Caroline Legault: Culture Hip Hop</th>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown47" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1926592309" id="a1.8" value="1"/>
+                                    <label for="a1.8">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1926592309" id="a2.8" value="2"/>
+                                    <label for="a2.8">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1926592309" id="a3.8" value="3"/>
+                                    <label for="a3.8">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1926592309" id="a4.8" value="4"/>
+                                    <label for="a4.8">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown48" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1392713585" id="b1.8" value="1"/>
+                                    <label for="b1.8">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1392713585" id="b2.8" value="2"/>
+                                    <label for="b2.8">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1392713585" id="b3.8" value="3"/>
+                                    <label for="b3.8">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1392713585" id="b4.8" value="4"/>
+                                    <label for="b4.8">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown49" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.942074875" id="c1.8" value="1"/>
+                                    <label for="c1.8">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.942074875" id="c2.8" value="2"/>
+                                    <label for="c2.8">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.942074875" id="c3.8" value="3"/>
+                                    <label for="c3.8">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.942074875" id="c4.8" value="4"/>
+                                    <label for="c4.8">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown50" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1821443047" id="d1.8" value="1"/>
+                                    <label for="d1.8">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1821443047" id="d2.8" value="2"/>
+                                    <label for="d2.8">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1821443047" id="d3.8" value="3"/>
+                                    <label for="d3.8">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1821443047" id="d4.8" value="4"/>
+                                    <label for="d4.8">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown51" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1288548244" id="e1.8" value="1"/>
+                                    <label for="e1.8">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1288548244" id="e2.8" value="2"/>
+                                    <label for="e2.8">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1288548244" id="e3.8" value="3"/>
+                                    <label for="e3.8">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1288548244" id="e4.8" value="4"/>
+                                    <label for="e4.8">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown52" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.691130820" id="f1.8" value="1"/>
+                                    <label for="f1.8">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.691130820" id="f2.8" value="2"/>
+                                    <label for="f2.8">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.691130820" id="f3.8" value="3"/>
+                                    <label for="f3.8">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.691130820" id="f4.8" value="4"/>
+                                    <label for="f4.8">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <! Done 9th row -->
+            <tr>
+                <th scope="row">Élisabeth Hould: La culture en héritage</th>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown53" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1626821254" id="a1.9" value="1"/>
+                                    <label for="a1.9">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1626821254" id="a2.9" value="2"/>
+                                    <label for="a2.9">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1626821254" id="a3.9" value="3"/>
+                                    <label for="a3.9">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1626821254" id="a4.9" value="4"/>
+                                    <label for="a4.9">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown54" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1489810103" id="b1.9" value="1"/>
+                                    <label for="b1.9">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1489810103" id="b2.9" value="2"/>
+                                    <label for="b2.9">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1489810103" id="b3.9" value="3"/>
+                                    <label for="b3.9">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1489810103" id="b4.9" value="4"/>
+                                    <label for="b4.9">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown55" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2104094896" id="c1.9" value="1"/>
+                                    <label for="c1.9">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2104094896" id="c2.9" value="2"/>
+                                    <label for="c2.9">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2104094896" id="c3.9" value="3"/>
+                                    <label for="c3.9">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.2104094896" id="c4.9" value="4"/>
+                                    <label for="c4.9">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown56" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.474998369" id="d1.9" value="1"/>
+                                    <label for="d1.9">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.474998369" id="d2.9" value="2"/>
+                                    <label for="d2.9">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.474998369" id="d3.9" value="3"/>
+                                    <label for="d3.9">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.474998369" id="d4.9" value="4"/>
+                                    <label for="d4.9">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown57" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1396909366" id="e1.9" value="1"/>
+                                    <label for="e1.9">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1396909366" id="e2.9" value="2"/>
+                                    <label for="e2.9">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1396909366" id="e3.9" value="3"/>
+                                    <label for="e3.9">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.1396909366" id="e4.9" value="4"/>
+                                    <label for="e4.9">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" disabled>Dropdown</button>
+                            <div id="myDropdown58" class="dropdown-content">
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.247516880" id="f1.9" value="1"/>
+                                    <label for="f1.9">1- Pas du tout</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.247516880" id="f2.9" value="2"/>
+                                    <label for="f2.9">2- Un peu</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.247516880" id="f3.9" value="3"/>
+                                    <label for="f3.9">3- Assez</label></div></a>
+                                <a href=""><div class="input-wrap"><input type="radio" name="entry.247516880" id="f4.9" value="4"/>
+                                    <label for="f4.9">4- Beaucoup</label></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <! Done 10th row -->
+        </table>
+        <br />
+        <br />
+        <h1>Section 2</h1>
+        <table>
+            <tr>
+                <th>1- L'emplacement de la formation était-il facilement accessible</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="input-wrap"><input type="radio" name="entry.1900755104" id="s2.1" value="1"/>
+                        <label for="s2.1">1- Très accessible</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.1900755104" id="s2.2" value="2"/>
+                        <label for="s2.2">2- Assez accessible</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.1900755104" id="s2.3" value="3"/>
+                        <label for="s2.3">3- Peu accessible</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.1900755104" id="s2.4" value="4"/>
+                        <label for="s2.4">4- Pas du tout accessible</label></div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+
+
+        <br />
+        <br />
+        <table>
+            <tr>
+                <th>2- Comment avez-vous entendu parlé de la journée de formation ?</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="input-wrap"><input type="radio" name="entry.1980795314" id="s3.1" value="1"/>
+                        <label for="s3.1">1- Facebook/Instagram</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.1980795314" id="s3.2" value="2"/>
+                        <label for="s3.2">2- Courriel de votre conseiller pédagogique</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.1980795314" id="s3.3" value="3"/>
+                        <label for="s3.3">3- Promotion de l'AQEDE</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.1980795314" id="s3.4" value="4"/>
+                        <label for="s3.4">4- Membre de la communauté de la danse</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.1980795314" id="s3.5" value="5"/>
+                        <label for="s3.5">5- Autres</label></div>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <table>
+            <tr>
+                <th>3- Comment avez-vous trouvé le processus d'inscription ?</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="input-wrap"><input type="radio" name="entry.143039836" id="s4.1" value="1"/>
+                        <label for="s4.1">1- Très Facile</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.143039836" id="s4.2" value="2"/>
+                        <label for="s4.2">2- Assez facile</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.143039836" id="s4.3" value="3"/>
+                        <label for="s4.3">3- Facile</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.143039836" id="s4.4" value="4"/>
+                        <label for="s4.4">4- Difficile</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.143039836" id="s4.5" value="5"/>
+                        <label for="s4.5">4- À améliorer</label></div>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <table>
+            <tr>
+                <th>4- Pensez-vous que l'évènement était bien organisé dans son ensemble considérant:<br /> le mode de paiement, l'organisation des ateliers, l'assemblée générale et le buffet) ?</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="input-wrap"><input type="radio" name="entry.842572727" id="s5.1" value="1"/>
+                        <label for="s5.1">1- Très bien organisé</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.842572727" id="s5.2" value="2"/>
+                        <label for="s5.2">2- Assez bien organisé</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.842572727" id="s5.3" value="3"/>
+                        <label for="s5.3">3- Pas très bien organisé</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.842572727" id="s5.4" value="4"/>
+                        <label for="s5.4">4- Pas du tout bien organisé</label></div>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <table>
+            <tr>
+                <th>5- Dans l'ensemble, êtes-vous satisfait ou insatisfait de la journée de formation 2019 ?</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="input-wrap"><input type="radio" name="entry.2129961940" id="s6.1" value="1"/>
+                        <label for="s6.1">1- Très satisfait</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.2129961940" id="s6.2" value="2"/>
+                        <label for="s6.2">2- Assez satisfait</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.2129961940" id="s6.3" value="3"/>
+                        <label for="s6.3">3- Neutre</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.2129961940" id="s6.4" value="4"/>
+                        <label for="s6.4">4- Assez insatisfait</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.2129961940" id="s6.5" value="5"/>
+                        <label for="s6.5">4- Très insatisfait</label></div>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <h1>Section 3</h1>
+        <table>
+            <tr>
+                <th>1- Dans quelle mesure votre sentiment d'appartenance à l'AQEDE se fait ressentir ?</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="input-wrap"><input type="radio" name="entry.990379855" id="s8.1" value="1"/>
+                        <label for="s8.1">1- Très fort</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.990379855" id="s8.2" value="2"/>
+                        <label for="s8.2">2- Assez fort</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.990379855" id="s8.3" value="3"/>
+                        <label for="s8.3">3- Neutre</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.990379855" id="s8.4" value="4"/>
+                        <label for="s8.4">4- Pas vraiment fort</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.990379855" id="s8.5" value="5"/>
+                        <label for="s8.5">4- Pas du tout</label></div>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <table>
+            <tr>
+                <th>2- Dans quelle mesure seriez-vous intéressé à participer à d'autre évènement AQEDE pendant l'année ?</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="input-wrap"><input type="radio" name="entry.1062110293" id="s7.1" value="1"/>
+                        <label for="s7.1">1- Très intéressé</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.1062110293" id="s7.2" value="2"/>
+                        <label for="s7.2">2- Assez intéressé</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.1062110293" id="s7.3" value="3"/>
+                        <label for="s7.3">3- Peu intéressé</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.1062110293" id="s7.4" value="4"/>
+                        <label for="s7.4">4- Pas du tout intéressé</label></div>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <table>
+            <tr>
+                <th>3- Pensez-vous participer à la journée de formation 2020 ?</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="input-wrap"><input type="radio" name="entry.1356695779" id="s9.1" value="1"/>
+                        <label for="s9.1">1- Oui</label></div>
+                    <div class="input-wrap"><input type="radio" name="entry.1356695779" id="s9.2" value="2"/>
+                        <label for="s9.2">2- Non</label></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Si oui, recommanderiez-vous cette journée à d'autres enseignants/tes ?
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="entry.1379424410" class="textarea" placeholder="Insert Comment Here">
+                </td>
+            </tr>
+        </table>
+        <br />
+        <footer>
+            <h1>Merci de votre participation et de votre collaboration. À l'année prochaine !</h1>
+            <br />
+            <h1>L'équipe du comité « Journée de formation 2019.»</h1>
+            <br><br>
+            <input type="submit" value="Submit" class="button5">
+        </footer>
+    </form>
+</center>
+
+</body>
+</html>
